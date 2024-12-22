@@ -4,7 +4,7 @@ pipeline {
     stage('Pre') {
       steps {
         sh 'node -v'
-        sh 'sudo npm install -g pnpm'
+        sh 'npm install -g pnpm'
         sh 'pnpm install'
       }
     }
